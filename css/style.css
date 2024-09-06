@@ -1,0 +1,58 @@
+.foot {
+  margin-bottom: 0 !important;
+}
+
+#title,
+#footer {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.kitten {
+  border-radius: 20px;
+}
+
+.review-logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.review-logo {
+  width: 15%;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .review-logo-container {
+    flex-wrap: wrap;
+  }
+
+  .review-logo {
+    width: 50%;
+    height: 30px;
+    object-fit: contain;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .kitten-container {
+    display: flex;
+    justify-content: center;
+  }
+}
